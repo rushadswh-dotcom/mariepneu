@@ -31,7 +31,12 @@ export function BrandsCarousel() {
             borderRadius: "100% 0 0 100%",
           }}
         />
-        <div className="flex animate-scroll">
+        <div 
+          className="flex hover:[animation-play-state:paused]"
+          style={{
+            animation: "carousel-scroll 20s linear infinite",
+          }}
+        >
           {[...brands, ...brands].map((brand, index) => (
             <div
               key={`${brand.name}-${index}`}
@@ -48,23 +53,6 @@ export function BrandsCarousel() {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 }
