@@ -102,10 +102,10 @@ export default function BlogPage() {
             Notre équipe intervient 24h/24 à St-Étienne et ses alentours pour tous vos problèmes de pneus et batteries.
           </p>
           <a 
-            href="tel:+33768546529"
+            href="tel:+41779696962"
             className="inline-flex items-center gap-2 bg-white text-[#0077ff] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Appelez le 07 68 54 65 29
+            Appelez le +41 77 969 69 62
           </a>
         </div>
       </section>

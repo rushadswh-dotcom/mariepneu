@@ -31,7 +31,7 @@ Une fois en sécurité, sortez du véhicule côté opposé à la circulation. En
 
 ### 3. Appelez un professionnel
 
-Plutôt que de risquer un changement de roue dans des conditions dangereuses, contactez Marie Pneu au **+41 XX XXX XX XX**. Nous intervenons en moins de 30 minutes à Lausanne et ses alentours.
+Plutôt que de risquer un changement de roue dans des conditions dangereuses, contactez Marie Pneu au **+41 77 969 69 62**. Nous intervenons en moins de 30 minutes à Lausanne et ses alentours.
 
 ## Pourquoi faire appel à un dépanneur professionnel ?
 
@@ -54,7 +54,7 @@ Plutôt que de risquer un changement de roue dans des conditions dangereuses, co
 - Remplacez vos pneus usés à temps
 - Évitez les obstacles sur la route
 
-**Besoin d'aide ? Contactez Marie Pneu au +41 XX XXX XX XX - Intervention 24h/24 à Lausanne**
+**Besoin d'aide ? Contactez Marie Pneu au +41 77 969 69 62 - Intervention 24h/24 à Lausanne**
     `
   },
   {
@@ -96,7 +96,7 @@ Notre équipe intervient rapidement avec le matériel professionnel nécessaire 
 - Chargeur de batterie
 - Batteries de remplacement toutes marques
 
-**Appelez le +41 XX XXX XX XX** - Intervention en moins de 30 minutes à Lausanne.
+**Appelez le +41 77 969 69 62** - Intervention en moins de 30 minutes à Lausanne.
 
 ## Comment entretenir votre batterie ?
 
@@ -180,7 +180,7 @@ Vérifiez toujours la pression à froid (véhicule immobilisé depuis 2h minimum
 
 ## Service Marie Pneu
 
-Nous proposons le contrôle et l'ajustement de la pression lors de nos interventions. **Appelez le +41 XX XXX XX XX**.
+Nous proposons le contrôle et l'ajustement de la pression lors de nos interventions. **Appelez le +41 77 969 69 62**.
     `
   },
   {
@@ -252,7 +252,7 @@ Notre équipe intervient à domicile avec du matériel professionnel multi-marqu
 - Rapport détaillé
 - Conseils personnalisés
 
-**Diagnostic à domicile : +41 XX XXX XX XX - Lausanne et alentours**
+**Diagnostic à domicile : +41 77 969 69 62 - Lausanne et alentours**
     `
   },
   {
@@ -321,7 +321,7 @@ Avant de commencer, vérifiez que vous disposez de :
 
 Changer une roue sur le bord de la route peut être dangereux. Nos techniciens interviennent en moins de 30 minutes.
 
-**+41 XX XXX XX XX - 24h/24 à Lausanne**
+**+41 77 969 69 62 - 24h/24 à Lausanne**
     `
   },
   {
@@ -385,7 +385,7 @@ Nous fournissons et installons des batteries pour :
 
 Votre poids lourd est immobilisé ? Marie Pneu intervient rapidement pour limiter votre immobilisation.
 
-**Appelez le +41 XX XXX XX XX - Service PL disponible**
+**Appelez le +41 77 969 69 62 - Service PL disponible**
     `
   },
   {
@@ -441,7 +441,7 @@ Nous proposons le remplacement de vos capteurs TPMS à domicile :
 
 Contactez-nous pour un devis personnalisé selon votre véhicule.
 
-**+41 XX XXX XX XX - Intervention à Lausanne et alentours**
+**+41 77 969 69 62 - Intervention à Lausanne et alentours**
     `
   },
   {
@@ -504,7 +504,7 @@ Notre service inclut :
 - Remontage et équilibrage
 - Contrôle de pression
 
-**Intervention rapide : +41 XX XXX XX XX**
+**Intervention rapide : +41 77 969 69 62**
     `
   },
   {
@@ -566,7 +566,7 @@ En cas de panne, notre équipe intervient même par grand froid :
 - Assistance démarrage
 - Dépannage pneu
 
-**+41 XX XXX XX XX - 24h/24 même les jours fériés**
+**+41 77 969 69 62 - 24h/24 même les jours fériés**
     `
   },
   {
@@ -627,7 +627,7 @@ Marie Pneu intervient de nuit dans toute la région :
 
 ## Contactez-nous
 
-**+41 XX XXX XX XX**
+**+41 77 969 69 62**
 
 Un opérateur vous répond à toute heure pour prendre en charge votre demande.
 
@@ -698,7 +698,7 @@ Notre équipe peut :
 - Tester l'alternateur et la batterie
 - Vous conseiller sur la suite
 
-**+41 XX XXX XX XX - Diagnostic à domicile à Lausanne**
+**+41 77 969 69 62 - Diagnostic à domicile à Lausanne**
     `
   },
   {
@@ -770,7 +770,7 @@ Nous intervenons pour :
 - Permutation des pneus
 - Remplacement à domicile
 
-**+41 XX XXX XX XX - Lausanne et alentours**
+**+41 77 969 69 62 - Lausanne et alentours**
     `
   },
   {
@@ -836,7 +836,7 @@ Marie Pneu intervient à domicile avec du matériel professionnel pour identifie
 - Contrôle du système de démarrage
 - Rapport détaillé et devis si réparation nécessaire
 
-**+41 XX XXX XX XX - Diagnostic à Lausanne**
+**+41 77 969 69 62 - Diagnostic à Lausanne**
     `
   },
   {
@@ -902,7 +902,7 @@ Nous proposons :
 - Conseils sur les équipements adaptés
 - Intervention rapide en cas de crevaison
 
-**+41 XX XXX XX XX - Intervention à Lausanne et région**
+**+41 77 969 69 62 - Intervention à Lausanne et région**
     `
   },
   {
@@ -972,7 +972,7 @@ Où que vous soyez dans notre zone, nous proposons :
 
 ## Contact
 
-**+41 XX XXX XX XX**
+**+41 77 969 69 62**
 
 Disponible 24h/24, 7j/7, jours fériés inclus.
 

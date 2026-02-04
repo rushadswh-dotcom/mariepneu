@@ -78,9 +78,9 @@ export default function UrgenceBatterie() {
                   className="gap-2 text-base bg-[#0077ff] hover:bg-[#0066dd] text-white px-8 py-6 text-lg rounded-lg"
                   asChild
                 >
-                  <a href="tel:+33768546529">
+                  <a href="tel:+41779696962">
                     <Phone className="h-5 w-5" />
-                    07 68 54 65 29
+                    +41 77 969 69 62
                   </a>
                 </Button>
               </div>

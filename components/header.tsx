@@ -45,9 +45,9 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button className="gap-2 bg-[#0077ff] hover:bg-[#0066dd] text-white" asChild>
-            <a href="tel:+41XXXXXXXXX">
+            <a href="tel:+41779696962">
               <Phone className="h-4 w-4" />
-              +41 XX XXX XX XX
+              +41 77 969 69 62
             </a>
           </Button>
         </div>
