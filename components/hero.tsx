@@ -5,8 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { DashboardCard } from "./dashboard-card";
 import { BrandsCarousel } from "./brands-carousel";
+import { useI18n } from "@/lib/i18n-context";
 
 export function Hero() {
+  const { t } = useI18n();
+
   return (
     <section className="relative min-h-screen flex flex-col justify-center pt-20">
       {/* Base white/light blue background */}
@@ -43,20 +46,20 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
-              Intervention rapide 7j/7 & 24H/24
+              {t.hero.badge}
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 text-balance">
-              Dépannage Pneu & Batterie à Domicile
+              {t.hero.title}
             </h1>
             
             {/* Desktop paragraph */}
             <p className="mt-6 text-lg text-gray-600 hidden md:block">
-              Pneu crevé ? Batterie à plat ? Notre équipe intervient rapidement chez vous, sur votre lieu de travail ou sur la route, partout à Lausanne et ses alentours, avec notre camion entièrement aménagé. Sans dépanneuse.
+              {t.hero.descriptionDesktop}
             </p>
             
             {/* Mobile paragraph - shorter version */}
             <p className="mt-4 text-base text-gray-600 md:hidden">
-              Pneu crevé ? Batterie à plat ? Intervention rapide à Lausanne et alentours. Sans dépanneuse.
+              {t.hero.descriptionMobile}
             </p>
 
             <div className="mt-6 md:mt-10">

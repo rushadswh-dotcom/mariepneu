@@ -1,6 +1,7 @@
 "use client";
 
 import { MapPin } from "lucide-react";
+import { useI18n } from "@/lib/i18n-context";
 
 const zones = [
   { name: "Lausanne", main: true },
@@ -26,19 +27,21 @@ const zones = [
 ];
 
 export function ZonesSection() {
+  const { t } = useI18n();
+
   return (
     <section className="py-16 sm:py-24 bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-[#0077ff]/10 text-[#0077ff] px-4 py-2 rounded-full text-sm font-medium mb-4">
             <MapPin className="h-4 w-4" />
-            Zone de couverture
+            {t.zones.badge}
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-balance">
-            Nos Zones d'Intervention
+            {t.zones.title}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Nous intervenons rapidement sur Lausanne et toute son agglomeration dans un rayon de 40 km.
+            {t.zones.subtitle}
           </p>
         </div>
 
@@ -59,7 +62,7 @@ export function ZonesSection() {
 
         <div className="mt-12 text-center">
           <p className="text-gray-500 text-sm">
-            Votre ville n'est pas listee ? Contactez-nous, nous intervenons probablement dans votre secteur.
+            {t.zones.notListed}
           </p>
         </div>
       </div>
