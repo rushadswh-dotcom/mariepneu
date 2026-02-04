@@ -95,7 +95,7 @@ const jsonLd = {
       "@id": "https://www.depannagepneus.ch/#localbusiness",
       "name": "Marie Pneu - Dépannage Pneu & Batterie à Domicile 7j/7",
       "image": "https://www.depannagepneus.ch/images/og-image.png",
-      "telephone": "+41XXXXXXXXX",
+      "telephone": "+41779696962",
       "priceRange": "CHF",
       "address": {
         "@type": "PostalAddress",
@@ -240,7 +240,7 @@ const jsonLd = {
       "logo": "https://www.depannagepneus.ch/images/og-image.png",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+41XXXXXXXXX",
+        "telephone": "+41779696962",
         "contactType": "customer service",
         "areaServed": "CH",
         "availableLanguage": "French"

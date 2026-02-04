@@ -70,7 +70,7 @@ export function Footer() {
             <ul className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
               <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
                 <Phone className="h-4 w-4 text-[#0077ff] flex-shrink-0" />
-                <a href="tel:+41XXXXXXXXX" className="hover:text-white transition-colors">+41 XX XXX XX XX</a>
+                <a href="tel:+41779696962" className="hover:text-white transition-colors">+41 77 969 69 62</a>
               </li>
               <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
                 <Mail className="h-4 w-4 text-[#0077ff] flex-shrink-0" />

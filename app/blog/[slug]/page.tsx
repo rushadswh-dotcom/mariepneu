@@ -117,9 +117,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               Notre équipe est disponible 24h/24 à St-Étienne et ses alentours pour tous vos problèmes de pneus, batteries et diagnostic.
             </p>
             <Button size="lg" variant="secondary" className="gap-2" asChild>
-              <a href="tel:+33768546529">
+              <a href="tel:+41779696962">
                 <Phone className="h-5 w-5" />
-                07 68 54 65 29
+                +41 77 969 69 62
               </a>
             </Button>
           </div>

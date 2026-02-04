@@ -14,9 +14,9 @@ export function CTASection() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="gap-2 text-base bg-[#0077ff] hover:bg-[#0066dd] text-white" asChild>
-              <a href="tel:+41XXXXXXXXX">
+              <a href="tel:+41779696962">
                 <Phone className="h-5 w-5" />
-                +41 XX XXX XX XX
+                +41 77 969 69 62
               </a>
             </Button>
             <Button size="lg" variant="outline" className="gap-2 text-base bg-transparent border-gray-600 text-white hover:bg-gray-800">
