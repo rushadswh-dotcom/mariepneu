@@ -1,40 +1,45 @@
+"use client";
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Disc3, Battery, Gauge } from "lucide-react";
-
-const services = [
-  {
-    id: "depannage-pneu",
-    title: "Dépannage Pneu",
-    description: "Réparation et remplacement de pneus sur place. Crevaison, éclatement, changement de roue - nous intervenons rapidement.",
-    icon: Disc3,
-    features: ["Réparation crevaison", "Changement de roue", "Équilibrage sur place", "Remplacement Valve", "Remplacement Capteur"],
-  },
-  {
-    id: "depannage-batterie",
-    title: "Dépannage Batterie",
-    description: "Batterie à plat ? Nous intervenons pour recharger ou remplacer votre batterie, quel que soit le modèle de véhicule.",
-    icon: Battery,
-    features: ["Recharge batterie", "Remplacement", "Diagnostic électrique", "Batterie Poids Lourd"],
-  },
-  {
-    id: "diagnostic",
-    title: "Diagnostic",
-    description: "Diagnostic complet de votre véhicule avec équipement professionnel. Identifiez rapidement les problèmes mécaniques.",
-    icon: Gauge,
-    features: ["Lecture codes erreur", "Diagnostic moteur", "Rapport détaillé"],
-  },
-];
+import { useI18n } from "@/lib/i18n-context";
 
 export function Services() {
+  const { t } = useI18n();
+
+  const services = [
+    {
+      id: "depannage-pneu",
+      title: t.services.tirePunctureService.title,
+      description: t.services.tirePunctureService.description,
+      icon: Disc3,
+      features: t.services.tirePunctureService.features,
+    },
+    {
+      id: "depannage-batterie",
+      title: t.services.batteryService.title,
+      description: t.services.batteryService.description,
+      icon: Battery,
+      features: t.services.batteryService.features,
+    },
+    {
+      id: "diagnostic",
+      title: t.services.diagnostic.title,
+      description: t.services.diagnostic.description,
+      icon: Gauge,
+      features: t.services.diagnostic.features,
+    },
+  ];
+
   return (
     <section className="py-24 bg-black" id="services">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Nos Services
+            {t.services.title}
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Des solutions complètes pour tous vos besoins automobiles
+            {t.services.subtitle}
           </p>
         </div>
 

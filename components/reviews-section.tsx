@@ -1,35 +1,24 @@
-import { Star } from "lucide-react";
+"use client";
 
-const reviews = [
-  {
-    name: "Thomas D.",
-    rating: 5,
-    date: "Il y a 2 semaines",
-    text: "Service impeccable ! Pneu crevé en pleine nuit, ils sont intervenus en moins de 20 minutes. Très professionnel.",
-  },
-  {
-    name: "Sophie L.",
-    rating: 5,
-    date: "Il y a 1 mois",
-    text: "Batterie à plat un dimanche matin, Marie Pneu m'a dépanné rapidement. Prix très correct et équipe sympathique.",
-  },
-  {
-    name: "Pierre M.",
-    rating: 5,
-    date: "Il y a 1 mois",
-    text: "Diagnostic complet de ma voiture fait sur place. Rapport détaillé et conseils utiles. Je recommande !",
-  },
-];
+import { Star } from "lucide-react";
+import { useI18n } from "@/lib/i18n-context";
 
 export function ReviewsSection() {
+  const { t } = useI18n();
+
+  const reviews = t.reviews.items.map((item, index) => ({
+    ...item,
+    rating: 5,
+  }));
+
   return (
     <section className="py-16 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nos avis clients
+            {t.reviews.title}
           </h2>
-          <p className="text-muted-foreground mb-6">Tous nos avis</p>
+          <p className="text-muted-foreground mb-6">{t.reviews.subtitle}</p>
 
           {/* Google Rating Badge */}
           <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4 bg-background rounded-xl px-4 sm:px-6 py-4 shadow-md border border-border max-w-full">
@@ -69,7 +58,7 @@ export function ReviewsSection() {
                 </div>
               </div>
               <span className="text-xs sm:text-sm text-muted-foreground">
-                Basé sur 25 avis
+                {t.reviews.basedOn}
               </span>
             </div>
           </div>

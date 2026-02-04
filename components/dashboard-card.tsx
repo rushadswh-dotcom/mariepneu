@@ -12,19 +12,21 @@ import {
   Users,
   Timer
 } from "lucide-react";
-
-const services = [
-  { name: "Dépannage Pneu", status: "Disponible", icon: Car },
-  { name: "Dépannage Batterie", status: "Disponible", icon: Battery },
-  { name: "Diagnostic", status: "Disponible", icon: Gauge },
-  { name: "Remplacement valve et capteur pression", status: "Disponible", icon: Settings },
-];
+import { useI18n } from "@/lib/i18n-context";
 
 const sidebarIcons = [
   { icon: Car, active: true },
 ];
 
 export function DashboardCard() {
+  const { t } = useI18n();
+
+  const services = [
+    { name: t.dashboard.tirePunctureService, status: t.dashboard.available, icon: Car },
+    { name: t.dashboard.batteryService, status: t.dashboard.available, icon: Battery },
+    { name: t.dashboard.diagnostic, status: t.dashboard.available, icon: Gauge },
+    { name: t.dashboard.valveReplacement, status: t.dashboard.available, icon: Settings },
+  ];
   return (
     <div className="relative w-full max-w-[95%] mx-auto sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px] origin-center overflow-visible">
       {/* Layer 1: Gray background with opacity and blur */}
@@ -117,7 +119,7 @@ export function DashboardCard() {
           <div className="flex-1 p-4">
             {/* Title */}
             <h3 className="text-white font-bold text-sm tracking-wider mb-4">
-              SERVICES & INTERVENTIONS
+              {t.dashboard.servicesTitle}
             </h3>
 
             {/* Services List Card - TRANSPARENT */}
@@ -129,7 +131,7 @@ export function DashboardCard() {
               }}
             >
               <h4 className="text-white/90 font-semibold text-sm mb-4">
-                NOS SERVICES
+                {t.dashboard.ourServices}
               </h4>
               
               {/* Services list */}
@@ -163,7 +165,7 @@ export function DashboardCard() {
                 }}
               >
                 <span className="text-white font-bold text-sm sm:text-lg">15min</span>
-                <span className="text-white/50 text-[10px] sm:text-xs ml-1">Intervention</span>
+                <span className="text-white/50 text-[10px] sm:text-xs ml-1">{t.dashboard.intervention}</span>
               </div>
               <div 
                 className="flex-1 rounded-lg px-2 sm:px-3 py-2 text-center"
@@ -173,7 +175,7 @@ export function DashboardCard() {
                 }}
               >
                 <span className="text-white font-bold text-sm sm:text-lg">24/7</span>
-                <span className="text-white/50 text-[10px] sm:text-xs ml-1">Dispo</span>
+                <span className="text-white/50 text-[10px] sm:text-xs ml-1">{t.dashboard.availability}</span>
               </div>
               <div 
                 className="flex-1 rounded-lg px-2 sm:px-3 py-2 text-center"
@@ -183,7 +185,7 @@ export function DashboardCard() {
                 }}
               >
                 <span className="text-white font-bold text-sm sm:text-lg">5000+</span>
-                <span className="text-white/50 text-[10px] sm:text-xs ml-1">Clients</span>
+                <span className="text-white/50 text-[10px] sm:text-xs ml-1">{t.dashboard.clients}</span>
               </div>
             </div>
           </div>
@@ -204,13 +206,13 @@ export function DashboardCard() {
           <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
             <Zap className="w-3 h-3 text-white" />
           </div>
-          <span className="text-white font-semibold text-sm">Service Rapide</span>
+          <span className="text-white font-semibold text-sm">{t.dashboard.fastService}</span>
         </div>
 
         {/* Content */}
         <div className="px-3 pb-3">
           <p className="text-white/70 text-xs mb-3">
-            Intervention en moins de 15 minutes dans votre zone
+            {t.dashboard.fastServiceDesc}
           </p>
 
           {/* Single progress bar */}
@@ -223,7 +225,7 @@ export function DashboardCard() {
           >
             <div className="flex items-center gap-2 mb-2">
               <Timer className="w-3 h-3 text-green-400" />
-              <span className="text-white/80 text-xs font-medium">Temps d{"'"}intervention</span>
+              <span className="text-white/80 text-xs font-medium">{t.dashboard.interventionTime}</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-green-400" />
@@ -238,7 +240,7 @@ export function DashboardCard() {
           <button 
             className="w-full bg-white text-gray-900 font-semibold text-xs py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors"
           >
-            Demander Intervention
+            {t.dashboard.requestIntervention}
           </button>
         </div>
       </div>

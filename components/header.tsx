@@ -4,15 +4,18 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const navigation = [
-  { name: "Dépannage Pneu", href: "/" },
-  { name: "Dépannage Batterie", href: "/depannage-batterie" },
-  { name: "Diagnostic", href: "/diagnostic" },
-];
+import { LanguageSelector } from "@/components/language-selector";
+import { useI18n } from "@/lib/i18n-context";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useI18n();
+
+  const navigation = [
+    { name: t.nav.tirePunctureService, href: "/" },
+    { name: t.nav.batteryService, href: "/depannage-batterie" },
+    { name: t.nav.diagnostic, href: "/diagnostic" },
+  ];
 
   return (
     <header className="fixed top-4 left-4 right-4 z-50">
@@ -28,7 +31,7 @@ export function Header() {
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
           >
-            <span className="sr-only">Ouvrir le menu</span>
+            <span className="sr-only">{t.nav.openMenu}</span>
             <Menu className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -43,7 +46,8 @@ export function Header() {
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
+          <LanguageSelector />
           <Button className="gap-2 bg-[#0077ff] hover:bg-[#0066dd] text-white" asChild>
             <a href="tel:+41779696962">
               <Phone className="h-4 w-4" />
@@ -62,14 +66,17 @@ export function Header() {
               <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                 <span className="text-xl font-bold text-[#0077ff]">Marie Pneu</span>
               </Link>
-              <button
-                type="button"
-                onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-gray-900"
-              >
-                <span className="sr-only">Fermer le menu</span>
-                <X className="h-6 w-6" aria-hidden="true" />
-              </button>
+              <div className="flex items-center gap-2">
+                <LanguageSelector />
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-m-2.5 rounded-md p-2.5 text-gray-900"
+                >
+                  <span className="sr-only">{t.nav.closeMenu}</span>
+                  <X className="h-6 w-6" aria-hidden="true" />
+                </button>
+              </div>
             </div>
             <div className="mt-4">
               <div className="space-y-1">
@@ -85,12 +92,12 @@ export function Header() {
                 ))}
               </div>
               <div className="mt-4 pt-4 border-t border-gray-200">
-<Button className="w-full gap-2 bg-[#0077ff] hover:bg-[#0066dd] text-white" asChild>
-                    <a href="tel:+41XXXXXXXXX">
-                      <Phone className="h-4 w-4" />
-                      +41 XX XXX XX XX
-                    </a>
-                  </Button>
+                <Button className="w-full gap-2 bg-[#0077ff] hover:bg-[#0066dd] text-white" asChild>
+                  <a href="tel:+41779696962">
+                    <Phone className="h-4 w-4" />
+                    +41 77 969 69 62
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
